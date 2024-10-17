@@ -4,11 +4,11 @@ public class NumSysConv {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Accept an integer number from the user
+
         System.out.print("Enter Number: ");
         int number = scanner.nextInt();
 
-        // Display the given number
+        
         System.out.println("Given Number: " + number);
 
         // Convert and display the binary, octal, and hexadecimal equivalents
@@ -20,7 +20,7 @@ public class NumSysConv {
         System.out.println("Octal equivalent: " + octal);
         System.out.println("Hexadecimal equivalent: " + hexadecimal);
 
-        // Close the scanner
+
         scanner.close();
     }
 }
