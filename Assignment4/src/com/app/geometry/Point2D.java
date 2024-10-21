@@ -18,7 +18,7 @@ public class Point2D {
 			return this.x == p2.x && this.y == p2.y;
 		}
 		public double calculateDistance(Point2D p2) {
-			return Math.sqrt(Math.pow(p2.x-this.x, 2)+ Math.pow(p2.x-this.x,2));
+			return Math.sqrt(Math.pow(p2.x-this.x, 2)+ Math.pow(p2.y-this.y,2));
 			 
 		}
 		
