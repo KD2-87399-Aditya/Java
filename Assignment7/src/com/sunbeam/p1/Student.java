@@ -1,6 +1,7 @@
 package com.sunbeam.p1;
 
 import java.util.Comparator;
+import java.util.Scanner;
 
 class Student implements Comparator<Student> {
 	private int roll;
@@ -54,13 +55,25 @@ class Student implements Comparator<Student> {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Employee [roll=" + roll + ", name=" + name + ", City=" + city + ", marks" + marks + "]";
+		return "Student [roll=" + roll + ", name=" + name + ", City=" + city + ", marks" + marks + "]";
 	}
 
 	@Override
 	public int compare(Student o1, Student o2) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	public void accept(int roll, String name, String city, double marks) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter roll");
+		roll = sc.nextInt();
+		System.out.println("Enter Name");
+		name = sc.next();
+		System.out.println("Enter City");
+		city = sc.next();
+		System.out.println("Enter roll");
+		marks = sc.nextDouble();
 	}
 
 }
@@ -82,7 +95,7 @@ class StuNameComparatorAsc implements Comparator<Student> {
 class StuRollComparatorDesc implements Comparator<Student> {
 	@Override
 	public int compare(Student o1, Student o2) {
-		return Integer.compare(o1.getRoll(), o2.getRoll());
+		return Integer.compare(o2.getRoll(), o1.getRoll());
 	}
 }
 
